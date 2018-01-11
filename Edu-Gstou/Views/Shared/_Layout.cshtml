@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+
+</head>
+<body>
+    <header>
+      <div class="top-bar">
+        <div class="row">
+            <p> @DateTime.Now.ToShortDateString() Первая неделя</p>
+            <ul>
+                 <li><a href="" class="top-bar-item">Контакты</a></li>
+                 <li><a href="" class="top-bar-item"><img src="~/images/menu-alt2.png" class="nav-img">Навигация</a></li>
+                 <li><a href="" class="top-bar-item">Поиск</a></li>
+            </ul>
+         </div>
+       </div>
+      <div class="container">
+         <div class="row">
+            <a class="logo" href=""><img src="~/images/logo.png"></a>
+            <div class="header-title"><h1>ОБРАЗОВАТЕЛЬНАЯ ДЕЯТЕЛЬНОСТЬ</h1> <br><h2>ГГНТУ им. академика Д.А.Миллионщикова</h2></div>
+        </div>
+    </div>
+      <div class="top-menu">
+          <div class="row">
+              <ul class="top-menu-sp">
+                  <li><a href="" class="top-menu-item" style="padding-top:9px">ЛИЦЕНЗИРОВАНИЕ И АКРЕДИТАЦИЯ</a></li>
+                  <li><a href="" class="top-menu-item">ПРОЕКТИРОВАНИЕ ОБРАЗОВАТЕЛЬНЫХ ПРОГРАММ</a></li>
+                  <li><a href="" class="top-menu-item">РЕАЛИЗАЦИЯ ОБРАЗОВАТЕЛЬНЫХ ПРОГРАММ</a></li>
+                  <li><a href="" class="top-menu-item">НАУЧНО-ОБРАЗОВАТЕЛЬНЫЕ ПОДРАЗДЕЛЕНИЯ</a></li>
+                  <li><a href="" class="top-menu-item" style="padding-top:9px">НАПРАВЛЕНИЯ И СПЕЦИАЛЬНОСТИ</a></li>
+              </ul>
+          </div>
+      </div>  
+
+   
+    </header>
+    <main>
+@RenderBody()
+        main
+    </main>
+    <footer>
+        <div class="footer-block1">
+            <div class="row">
+                 <ul>
+                      <li><a href="" class="footer-block1-item">Карта портала</a></li>
+                      <li><a href="" class="footer-block1-item">Контакты</a></li>
+                      <li><a href="" class="footer-block1-item"><img src="~/images/menu-alt2.png" class="nav-img">Навигация</a></li>
+                  </ul>
+             </div>
+        </div>
+        <div class="footer-block2">
+            <div class="row">
+              <p>Информация © 1998-2017 ГГНТУ, Департамент по образовательной и внеучебной деятельности
+                   <br>Разработка © 2017 ГГНТУ, Информационно-аналитическое управление</p>
+            </div>         
+         </div>
+        
+    </footer>
+   
+
+ 
+</body>
+</html>

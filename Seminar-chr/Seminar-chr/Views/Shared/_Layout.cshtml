@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body>
+    <header>
+        <div class="top-nav">
+            <div class="row" style="background:#428BCA">
+                <p> @DateTime.Now.ToLongDateString()</p>
+                <div class="top-nav-col1">
+                    <ul>
+                        <li><a href="">Контакты</a></li>
+                        <li><a href="">Авторизация</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-box">
+            <div class="row">
+                <a href="~/Home/Index"><img src="~/images/logo.jpg"></a>
+                
+                <p>Чеченский институт повышения квалификации <br>работников образования</p>
+                <ul>
+                        <li><a href="">Скачать план на 2017-2018 гг.</a></li>
+                        <li><a href="">Гостиницы</a></li>
+                        <li><a href="">Подпишитесь на рассылку</a></li>
+                </ul>
+                </div>
+            </div>
+         <div class="top-menu">
+             <div class="row" style="border-top:1px solid #428BCA; border-bottom:1px solid #428BCA; box-sizing:border-box">
+                 <ul>
+                     <li><a href="~/Home/seminars">СЕМИНАРЫ И КУРСЫ</a></li>
+                     <li><a href="">ОБ ИНСТИТУТЕ</a></li>
+                     <li><a href="">АКЦИИ</a></li>
+                     <li><a href="">КОНТАКТЫ</a></li>
+                 </ul>
+                 <form><input type="search" value="Поиск"></form>
+             </div>
+         </div>       
+                
+            
+    </header>
+    <main>@RenderBody()</main>
+    <footer>
+        
+        <div>
+            <h4>ОБ ИНСТИТУТЕ</h4>
+            <ul>
+                <li><a href="">О нас</a></li>
+                <li><a href="">Документы</a></li>
+                <li><a href="">Партнеры</a></li>
+                <li><a href="">Клиенты</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>ОБУЧЕНИЕ</h4>
+            <ul>
+                <li><a href="">Семинары</a></li>
+                <li><a href="">Курсы</a></li>
+                <li><a href="">Конференции</a></li>
+                <li><a href="">Онлайн-обучение</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>КОНТАКТЫ</h4>
+            <p>
+                ГБУ ДПО "ЧИПКРО"
+                <br>364037,Чеченская Республика,
+                <br>г. Грозный, ул. Х. Кишиевой, 30
+                <br>тел/факс 8 (8712) 21-22-24
+                <br>E-mail: ipkro-chr@mail.ru 
+            </p>
+        </div>
+        
+    </footer>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
